@@ -1,6 +1,6 @@
 # Software Engineer Challenge
 
-**Note:** If you make a public fork of this repo please don't push the your solution back into the fork
+**Note:** If you make a public fork of this repo please don't push the solution into the fork
 
 ## Question 1
 
