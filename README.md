@@ -30,7 +30,7 @@ Write code that maximizes the throughput of writing key value pairs to Redis.
 
 ## Question 2
 
-What is the maximum number of players to ever be in a bingo hall at the same time.
+What is the maximum number of players to ever be in a bingo hall at the same time?
 
 The interactions between the players and the bingo hall are captured in a text log file. Each line of the file contains one of 2 types of event names(JOIN or LEAVE) followed by a timestamp which represent seconds since Unix epoch time.
 If a JOIN and a LEAVE events have the same timestamp it is considered that the JOIN event happened first.
