@@ -15,9 +15,9 @@ Write code to set 100K records in redis as fast as possible (generating a Redis 
 
 Write code that maximizes the throughput of writing key value pairs to Redis.
 
- - A nonoptimal solution is provided in [this file](src/main/java/com/uken/platform/interview/problem2/RedisController.java). This solution will hit a max throughput (e.g.: 2K requests per second) that is not optimal. If the communication between the application and redis is understood and bottlenecks are identified a different solution could be devised that would increase throughput on the same hardware.
+ - A nonoptimal solution is provided in [this file](src/main/java/com/uken/platform/interview/problem2/RedisController.java). Due to its threading model this solution will hit a max throughput (e.g.: 2K requests per second) that is not optimal. If the communication between the client and the application and between the application and redis is understood a bottleneck can be identified and a solution could be devised that would increase throughput on the same hardware.
  - Throughput can be measured by using a command such as `wrk -c 20 -d 5 -t 2 http://host:8080/pair/key/value`. You will probably need to tweak these values
- - Your code will be benchmarked against a redis instance in a different continent than where your application will run
+ - This bottleneck is more pronounced when the redis instance is in a different continent than your application.
 
 #### Notes ####
 - Challenge A and Challenge B are sharing the same repo for convenience but they are independent Challenges.
